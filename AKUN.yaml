@@ -1,0 +1,33 @@
+proxies:
+- name: VM-ID WEB nontls
+  server: go2.webtoon.com
+  port: 80
+  type: vmess
+  uuid: 68467f6d-2b5f-49dc-8e2b-78e8d2ac6891
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: id-nusa.anuy.my.id
+  network: ws
+  ws-opts:
+    path: "/vmess"
+    headers:
+      Host: id-nusa.anuy.my.id
+  udp: true
+- name: VM-ID VIDnontls 212
+  server: quiz.int.vidio.com
+  port: 80
+  type: vmess
+  uuid: ebdd0905-e79d-428f-b75f-16ae6dd1b6b3
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: id-nusa.anuy.my.id
+  network: ws
+  ws-opts:
+    path: "/vmess"
+    headers:
+      Host: id-nusa.anuy.my.id
+  udp: true
