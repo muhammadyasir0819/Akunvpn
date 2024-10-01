@@ -1,4 +1,17 @@
 proxies:
+- name: TR-SG EXP 8-10
+  server: quiz.vidio.com
+  port: 443
+  type: trojan
+  password: 321ba095-116c-46b8-8b31-2e81fad130fb
+  skip-cert-verify: true
+  sni: sg3.v4trojn.xyz
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: sg3.v4trojn.xyz
+  udp: true
 - name: VM-ID WEB nontls
   server: go2.webtoon.com
   port: 80
