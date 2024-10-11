@@ -1,4 +1,17 @@
 proxies:
+- name: TR-SG EXP 18-10
+  server: quiz.vidio.com
+  port: 443
+  type: trojan
+  password: 2e9d22cc-6ebb-4f43-a7ea-53a2049347c0
+  skip-cert-verify: true
+  sni: sg1.v4trojn.xyz
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: sg1.v4trojn.xyz
+  udp: true
 - name: TR-SG EXP 8-10
   server: quiz.vidio.com
   port: 443
